@@ -12,18 +12,25 @@ public class Ex8 {
         }
     }
     
-    public static void cuboMagico(int matriz[][]) {
-        int soma = 0, checa = 0;
+    public static void quadradoMagico(int matriz[][], int dp) {
+        int somaLin, somaCol;
         for(int lin = 0; lin < matriz.length; lin++) {
+            somaLin = 0;
+            somaCol = 0;
             for(int col = 0; col < matriz[lin].length; col++) {
-                soma += matriz[lin][col];
+                somaLin += matriz[lin][col];
+                somaCol += matriz[col][lin];
             }
-            
+            if(somaLin != dp || somaCol != dp){
+                System.out.println("Nao e um quadrado magico"); //alguma linha ou coluna nao é igual
+                return;
+            }
         }
+        System.out.println("E um quadrado magico");
     }
     
     public static void main(String[] args) {
-        int n;
+        int n, dp = 0;
         
         Scanner input = new Scanner(System.in);
         
@@ -34,11 +41,15 @@ public class Ex8 {
         System.out.println("Entre com os valores da matriz:");
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                System.out.println("Entre com o A" +(i+1)+(j+1)+ ":");
+//                System.out.println("Entre com o A" +(i+1)+(j+1)+ ":");
                 matriz[i][j] = input.nextInt();
+                if(i == j){
+                    dp += matriz[i][j]; //ja calcula a diagonal principal na insercao
+                }
             }
         }
+        
         printaMatriz(matriz);
-        cuboMagico(matriz);
+        quadradoMagico(matriz, dp);
     }
 }
