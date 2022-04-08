@@ -1,4 +1,4 @@
-package Ex8;
+package ExercicioSintaxe;
 import java.util.Scanner;
 
 public class Ex8 {

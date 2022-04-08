@@ -1,4 +1,4 @@
-package Ex4;
+package ExercicioSintaxe;
 
 public class Ex4 {
     public static void main(String[] args) {

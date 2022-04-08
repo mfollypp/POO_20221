@@ -1,4 +1,4 @@
-package Ex5;
+package ExercicioSintaxe;
 import java.util.Scanner;
 
 public class Ex5 {
