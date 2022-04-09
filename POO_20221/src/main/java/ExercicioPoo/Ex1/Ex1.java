@@ -2,11 +2,13 @@ package ExercicioPoo.Ex1;
 
 public class Ex1 {
     public static void main(String[] args) {
-        Contato cont = new Contato();
+        Agenda agenda = new Agenda();
         
-        cont.setNome();
-        cont.setNumero();
+        agenda.addContato();
+        agenda.printAgenda();
         
-        cont.getContato();
+        agenda.addContato();
+        agenda.addContato();
+        agenda.printAgenda();
     }
 }
