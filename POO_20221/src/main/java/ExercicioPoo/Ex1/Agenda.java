@@ -21,11 +21,13 @@ public class Agenda {
     }
     
     void printAgenda(){
+        System.out.println("Agenda:");
         for(int j = 0; j < agenda.length; j++){
             if(agenda[j] != null){
-                System.out.println("Contato " +(j+1)+ ":");
+                System.out.println("-Contato " +(j+1)+ ":");
                 System.out.println("-Nome: " +agenda[j].nome);
                 System.out.println("-Numero: " +agenda[j].numero);
+                System.out.println();
             }
         }
     }
