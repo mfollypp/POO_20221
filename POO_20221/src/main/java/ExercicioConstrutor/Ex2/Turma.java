@@ -5,7 +5,7 @@ public class Turma {
     private Professor professor;
     private String hora;
     
-    String getHorario(){
-        //Obtenção do horário de uma aula
-    }
+//    String getHorario(){
+//        //Obtenção do horário de uma aula
+//    }
 }

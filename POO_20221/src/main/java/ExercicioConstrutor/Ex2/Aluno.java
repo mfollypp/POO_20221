@@ -14,11 +14,11 @@ public class Aluno {
         //Exibição do histórico do aluno
     }
     
-    double calculaMedia(){
-        //Cálculo da média do aluno em uma turma
-    }
+//    double calculaMedia(){
+//        //Cálculo da média do aluno em uma turma
+//    }
     
-    double calculaCR(){
-        //Cálculo do CR de um aluno
-    }
+//    double calculaCR(){
+//        //Cálculo do CR de um aluno
+//    }
 }
