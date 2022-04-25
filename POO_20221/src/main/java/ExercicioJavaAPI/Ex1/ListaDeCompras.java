@@ -6,7 +6,6 @@ import java.util.Collections;
 public class ListaDeCompras {
     private ArrayList<String> lista = new ArrayList<String>();
     
-    //nao sei porque nao ta retornando true se produto ja esta na lista
     void addLista(String produto){
         if(this.lista.contains(produto.toLowerCase())){
             System.out.println("Produto ja esta na lista");
