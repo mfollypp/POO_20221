@@ -9,7 +9,7 @@ public class ConversaoDeUnidadesDeArea {
     private double unidade;
     
     //rever os returns para saber se esta convertendo direito
-    double convMetroQuadrado(double unidade, String conversao){
+    static double convMetroQuadrado(double unidade, String conversao){
         if(conversao.toLowerCase().equals("pe quadrado")){
             return (unidade * metroQuadrado);
         }
@@ -25,7 +25,7 @@ public class ConversaoDeUnidadesDeArea {
         return 0;
     }
     
-    double convPeQuadrado(double unidade, String conversao){
+    static double convPeQuadrado(double unidade, String conversao){
         if(conversao.toLowerCase().equals("metro quadrado")){
             return (unidade / metroQuadrado);
         }
@@ -38,7 +38,7 @@ public class ConversaoDeUnidadesDeArea {
         return 0;
     }
     
-    double convMilhaQuadrada(double unidade, String conversao){
+    static double convMilhaQuadrada(double unidade, String conversao){
         if(conversao.toLowerCase().equals("metro quadrado")){
             return (unidade * acre) / metroQuadrado;
         }
@@ -51,7 +51,7 @@ public class ConversaoDeUnidadesDeArea {
         return 0;
     }
     
-    double convAcre(double unidade, String conversao){
+    static double convAcre(double unidade, String conversao){
         if(conversao.toLowerCase().equals("metro quadrado")){
             return (unidade * acre) / metroQuadrado;
         }
@@ -59,7 +59,7 @@ public class ConversaoDeUnidadesDeArea {
             return unidade * acre;
         }
         if(conversao.toLowerCase().equals("milha quadrada")){
-            return (unidade * acre) / milhaQuadrada;
+            return unidade / milhaQuadrada;
         }
         return 0;
     }
