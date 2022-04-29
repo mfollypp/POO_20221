@@ -9,6 +9,7 @@ public class Inscricao {
         }
         else{
             System.out.println("Essa palestra ja tem a capacidade maxima de participantes!");
+            System.out.println("");
         }
     }
 }

@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class Evento {
-    static final int MAX_PALESTRA = 6;
+    static final int MAX_PALESTRA = 4;
     private Calendar dataInicio;
     private Calendar dataFim;
     private Calendar horaInicio;
     private Calendar horaFim;
     private static Evento unicaInstancia;
     private ArrayList<Palestra> palestras = new ArrayList<Palestra>();
-    private int qtdPalestra = 0;
+    static int qtdPalestra = 0;
 
     //Construtor private para poder instanciar somente um evento atraves do Singleton, para instanciar faz: Evento nomeEvento = Evento.getInstance();
     private Evento(Calendar dataInicio, Calendar dataFim, Calendar horaInicio, Calendar horaFim){
@@ -36,7 +36,9 @@ public class Evento {
             this.palestras.add(palestra);
         }
         else{
-            System.out.println("Numero maximo de palestras no evento ja foi atingido!");
+            System.out.print("Numero maximo de palestras no evento ja foi atingido! ");
+            System.out.println(titulo + " nao pode ser adicionada!");
+            System.out.println("");
         }
     }
     
@@ -49,6 +51,7 @@ public class Evento {
                 }
             }
         }
+        System.out.println("");
     }
     
     void printaPalestras(){
@@ -57,7 +60,9 @@ public class Evento {
             for(Participante part : pal.getParticipantes()){
                 System.out.println(part.getNome());
             }
+            System.out.println("");
         }
+        System.out.println("");
     }
     
     Calendar getDataInicio(){
@@ -74,6 +79,10 @@ public class Evento {
     
     Calendar getHoraFim(){
         return this.horaFim;
+    }
+    
+    ArrayList<Palestra> getPalestras(){
+        return this.palestras;
     }
     
 }
