@@ -1,4 +1,4 @@
-package ExercicioClasseAbstrateInterface.Ex2;
+package ExercicioClassesAbstratasInterfaces.Ex2;
 
 public interface CarbonFootprint {
     

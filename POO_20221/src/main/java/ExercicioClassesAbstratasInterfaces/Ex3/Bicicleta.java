@@ -1,4 +1,4 @@
-package ExercicioClasseAbstrateInterface.Ex3;
+package ExercicioClassesAbstratasInterfaces.Ex3;
 
 public class Bicicleta implements CarbonFootprint{
     private int pedaladas;

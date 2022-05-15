@@ -1,4 +1,4 @@
-package ExercicioClasseAbstrateInterface.Ex1;
+package ExercicioClassesAbstratasInterfaces.Ex1;
 
 public class Retangulo extends FormaGeometrica {
     

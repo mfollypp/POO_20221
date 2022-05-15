@@ -1,4 +1,4 @@
-package ExercicioClasseAbstrateInterface.Ex3;
+package ExercicioClassesAbstratasInterfaces.Ex2;
 
 public class Carro implements CarbonFootprint {
     private String combustivel;
@@ -28,10 +28,9 @@ public class Carro implements CarbonFootprint {
     
     @Override
     public void printaCarbono(){
-        System.out.println("Carro:");
-        System.out.println("-Combustivel: " + this.combustivel.toUpperCase());
-        System.out.println("-Cilindrada: " + this.cilindrada);
-        System.out.println("-Carbon Footprint: " + this.getCarbonFootprint());
+        System.out.println("Combustivel: " + this.combustivel.toUpperCase());
+        System.out.println("Cilindrada: " + this.cilindrada);
+        System.out.println("Carbon Footprint: " + this.getCarbonFootprint());
         System.out.println("");
     }
     

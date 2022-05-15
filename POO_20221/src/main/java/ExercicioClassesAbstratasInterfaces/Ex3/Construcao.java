@@ -1,4 +1,4 @@
-package ExercicioClasseAbstrateInterface.Ex3;
+package ExercicioClassesAbstratasInterfaces.Ex3;
 
 public class Construcao implements CarbonFootprint {
     private int numPessoas;
